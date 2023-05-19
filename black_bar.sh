@@ -19,7 +19,7 @@ fi
 read -p "Geben Sie die Startzeit für den schwarzen Balken ein (Format: HH:MM:SS): " start_time
 read -p "Geben Sie die Endzeit für den schwarzen Balken ein (Format: HH:MM:SS): " end_time
 
-# Start- und Endzeit in Sekunden umwandeln (Da es ansonsten Fehler bei der Eingabe zum Abbruch des Scripts führen)
+# Start- und Endzeit in Sekunden umwandeln
 IFS=":" read start_hour start_min start_sec <<< "$start_time"
 start_seconds=$((10#$start_hour*3600 + 10#$start_min*60 + 10#$start_sec))
 
